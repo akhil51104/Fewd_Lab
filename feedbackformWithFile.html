@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <style>
+        /* */
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h1 {
+            color: #00b7ff;
+        }
+    </style>
+</head>
+<body class="bg-dark text-white">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="portfolio.html"></a>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h1 class="text-center">Feedback Form</h1>
+        
+        <form action="submit_feedback.php" method="post">
+            <div class="mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="feedback" class="form-label">Your Feedback</label>
+                <textarea class="form-control" id="feedback" name="feedback" rows="4" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-outline-info">Submit Feedback</button>
+        </form>
+    </div>
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
